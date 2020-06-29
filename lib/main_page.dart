@@ -104,6 +104,152 @@ class _MainPageState extends State<MainPage>{
                   color: Colors.white,
                   borderRadius: BorderRadius.only(topRight: Radius.circular(16))
               ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 2,
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 32),
+                      child: Align(
+                        alignment: Alignment.bottomLeft,
+                        child: Text("SHARED REMINDERS", style: TextStyle(color: Colors.blue[300], fontWeight: FontWeight.bold, fontSize: 16)),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 24),
+                  Expanded(
+                    flex: 4,
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 32),
+                      child: ListView(
+                        reverse: true,
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.blue[50],
+                              borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 8),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars3.githubusercontent.com/u/3497714?s=400&u=9125a67996ad962e659336ad4550a4eae1b85bb8&v=4"),
+                                ),
+                                Text("HB", style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[50],
+                                borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 8),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars3.githubusercontent.com/u/3497714?s=400&u=9125a67996ad962e659336ad4550a4eae1b85bb8&v=4"),
+                                ),
+                                Text("HB", style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[50],
+                                borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 8),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars3.githubusercontent.com/u/3497714?s=400&u=9125a67996ad962e659336ad4550a4eae1b85bb8&v=4"),
+                                ),
+                                Text("HB", style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[50],
+                                borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 8),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars3.githubusercontent.com/u/3497714?s=400&u=9125a67996ad962e659336ad4550a4eae1b85bb8&v=4"),
+                                ),
+                                Text("HB", style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[50],
+                                borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 8),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars3.githubusercontent.com/u/3497714?s=400&u=9125a67996ad962e659336ad4550a4eae1b85bb8&v=4"),
+                                ),
+                                Text("HB", style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 4, top: 8, bottom: 8),
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[50],
+                                borderRadius: BorderRadius.circular(48)
+                            ),
+                            padding: EdgeInsets.symmetric(vertical: 8),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundImage: NetworkImage("https://avatars3.githubusercontent.com/u/3497714?s=400&u=9125a67996ad962e659336ad4550a4eae1b85bb8&v=4"),
+                                ),
+                                Text("HB", style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold))
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 6,
+                    child: Placeholder(),
+                  ),
+                ],
+              )
             ),
           )
         ],
